@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avis de clients satisfaits par les services de correction et relecture d'Helena Rigaud — Le Mot Juste Au Point.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#d4789a">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://select-dinosaur-39.clerk.accounts.dev https://www.gstatic.com https://esm.sh https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://*.clerk.accounts.dev https://*.googleapis.com https://esm.sh; frame-src 'self' https://*.clerk.accounts.dev; worker-src 'self' blob:;">
+    <meta property="og:title" content="Avis clients — Le Mot Juste Au Point">
+    <meta property="og:description" content="Avis de clients satisfaits par les services de correction et relecture d’Helena Rigaud.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <title>Avis — Le Mot Juste Au Point</title>
+    <link rel="icon" href="assets/img/logo01.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
+        src="https://select-dinosaur-39.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+        type="text/javascript"></script>
+    <script defer src="assets/js/clerk-api.js"></script>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+
+        <div class="header-logo">
+            <a href="index.html">Helena Rigaud</a>
+        </div>
+
+        <div class="header-account">
+            <a href="#" aria-label="Mon compte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== MENU LATÉRAL ===== -->
+    <nav class="side-nav" id="sideNav" aria-hidden="true">
+        <button class="close-btn" id="closeBtn" aria-label="Fermer le menu">&times;</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services-tarifs.html">Services &amp; Tarifs</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="avis.html">Avis</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENU ===== -->
+    <main>
+        <!-- Titre + logo -->
+        <section class="page-header" data-aos="zoom-in">
+            <img src="assets/img/icons/customer-review_11683380.png" alt="Icône représentant les avis clients" class="page-icon" width="128" height="128" fetchpriority="high">
+            <h1>Avis</h1>
+        </section>
+
+        <!-- Cartes d'avis clients -->
+        <section class="avis-section" data-aos="fade-up">
+            <div id="reviews-list" class="avis-grid">
+            </div>
+        </section>
+
+        <!-- Formulaire d'avis (connecté uniquement) -->
+        <section class="avis-form-section">
+            <div class="avis-form-card" data-aos="zoom-in">
+
+                <!-- Message affiché si non connecté -->
+                <div id="avis-connexion-msg" class="avis-connexion-msg">
+                    <p>Vous devez être <button class="avis-link-btn" id="avis-signin-btn">connecté(e)</button> pour laisser un avis.</p>
+                </div>
+
+                <!-- Formulaire affiché si connecté -->
+                <form id="avis-form" class="avis-form" novalidate style="display:none;">
+                    <h2 class="avis-form-title">Laisser un avis</h2>
+
+                    <div class="avis-form-stars" role="group" aria-label="Choisissez une note">
+                        <span class="star-input" data-value="1" role="radio" aria-label="1 étoile" tabindex="0">★</span>
+                        <span class="star-input" data-value="2" role="radio" aria-label="2 étoiles" tabindex="0">★</span>
+                        <span class="star-input" data-value="3" role="radio" aria-label="3 étoiles" tabindex="0">★</span>
+                        <span class="star-input" data-value="4" role="radio" aria-label="4 étoiles" tabindex="0">★</span>
+                        <span class="star-input" data-value="5" role="radio" aria-label="5 étoiles" tabindex="0">★</span>
+                    </div>
+                    <input type="hidden" id="avis-note" value="0">
+
+                    <div class="form-group">
+                        <textarea id="avis-texte-input" placeholder=" " rows="4" maxlength="500" required></textarea>
+                        <label for="avis-texte-input">Votre avis (500 caractères max.)</label>
+                        <span class="form-focus-bar"></span>
+                    </div>
+
+                    <button type="submit" class="contact-btn">Envoyer mon avis</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner" data-aos="fade-up">
+
+            <!-- Colonne 1 : liens légaux -->
+            <nav class="footer-col" aria-label="Liens légaux">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="politique-de-conf.html">Politique de confidentialité</a>
+                <a href="cgu.html">Conditions générales d'utilisation</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+            </nav>
+
+            <!-- Colonne 2 : navigation -->
+            <nav class="footer-col" aria-label="Navigation">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos de moi</a>
+                <a href="services-tarifs.html">Services &amp; tarifs</a>
+                <a href="avis.html">Avis client</a>
+            </nav>
+
+            <!-- Colonne 3 : réseaux sociaux -->
+            <div class="footer-col footer-socials">
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Barre copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Copyright. Tout droits réservés.</p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script type="module" defer src="assets/js/firebase-api.js"></script>
+    <script defer src="assets/js/avis.js"></script>
+</body>
+</html>

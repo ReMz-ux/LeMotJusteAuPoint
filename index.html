@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helena Rigaud, correctrice professionnelle certifiée. Relecture, correction et bêta-lecture pour auteurs, étudiants et entreprises.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#d4789a">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://select-dinosaur-39.clerk.accounts.dev https://esm.sh https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://*.clerk.accounts.dev https://esm.sh; frame-src 'self' https://*.clerk.accounts.dev; worker-src 'self' blob:;">
+    <meta property="og:title" content="Le Mot Juste Au Point — Correction &amp; Relecture Professionnelle">
+    <meta property="og:description" content="Helena Rigaud, correctrice certifiée. Relecture, correction et bêta-lecture pour auteurs, étudiants et entreprises.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <title>Accueil — Le Mot Juste Au Point</title>
+    <link rel="icon" href="assets/img/logo01.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
+        src="https://select-dinosaur-39.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+        type="text/javascript"></script>
+    <script defer src="assets/js/clerk-api.js"></script>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header data-aos="fade-down" class="site-header">
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+
+        <div class="header-logo">
+            <a href="index.html">Helena Rigaud</a>
+        </div>
+
+        <div class="header-account">
+            <a href="#" aria-label="Mon compte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== MENU LATÉRAL ===== -->
+    <nav class="side-nav" id="sideNav" aria-hidden="true">
+        <button class="close-btn" id="closeBtn" aria-label="Fermer le menu">&times;</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services-tarifs.html">Services &amp; Tarifs</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="avis.html">Avis</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENU ===== -->
+    <main>
+        <div data-aos="zoom-in" id="logo">
+        <img  src="assets/img/logo01.png" alt="Logo Le Mot Juste Au Point">
+        </div>
+        <div data-aos="zoom-in-down">
+            <h1>L'art de sublimer vos écrits avec rigueur et bienveillance.</h1>
+            <div id="description">
+                <p>Bienvenue dans mon univers de lectrice et correctrice passionnée !
+
+Moi, c’est Helena. Mon super-pouvoir ? Repérer la coquille qui s'est glissée dans votre flyer pro, la formule maladroite qui bloque la lecture de votre mémoire, ou le contresens qui gâche le rythme d'un thriller haletant. Bref, je peaufine vos écrits pour que vos lecteurs, vos clients ou vos jurys n'aient d'yeux que pour votre message.
+
+De lectrice compulsive à gardienne de vos mots
+
+Ma relation avec les livres a commencé à l’adolescence et ne s’est jamais arrêtée. Je suis ce qu’on appelle une lectrice compulsive. Romance contemporaine ou historique, fantasy, fantastique, thriller bien ficelé à la Dan Brown... j'ai dévoré des milliers de pages.
+
+Mais à force de lire, j’ai fait un constat frustrant. Qu'il s'agisse de romans (auto-édités ou en maison d'édition) ou même des sous-titres de mes séries préférées à la télé, j'ai vu passer pas mal de coquilles et de tournures de phrases assez lunaires qui gâchaient l'immersion. (Et quand on comprend un peu la langue d'origine, le décalage est parfois flagrant !).
+
+Pour moi, lorsqu'un lecteur ou un spectateur choisit de s'offrir une œuvre et d'y consacrer son temps précieux, il mérite une expérience parfaite. Un texte soigné et fluide, c'est la plus belle marque de respect qu'on puisse lui offrir !
+
+Après avoir partagé mes frustrations avec mes amies chroniqueuses littéraires, l’une d’elles m’a lancé : « Et pourquoi tu n'en ferais pas ton métier ? »
+
+Ce fut le déclic. J’ai décidé de franchir le pas et de me former sérieusement. Aujourd'hui, je suis certifiée par l'EFLC (École Française des Lecteurs et Correcteurs). Et parce qu'on n'arrête jamais d'apprendre (et que je ne prétends pas être une académicienne infaillible !), je prépare actuellement le Projet Voltaire pour continuer à affûter mes compétences au quotidien.</p>
+
+                <div class="text-separator" role="separator" aria-hidden="true" data-aos="zoom-in" data-aos-duration="600">
+                    <span class="sep-line"></span>
+                    <span class="sep-ornament">✦</span>
+                    <span class="sep-line"></span>
+                </div>
+
+                <p>Ma philosophie : le respect du lecteur, sans dictature
+
+Soyons honnêtes : le « Dieu de la correction » n’existe pas. L'erreur est humaine, et mon but n'est pas de corriger vos textes avec une règle sur les doigts. Je me vois plutôt comme votre première alliée.
+
+Vous avez peut-être déjà une excellente plume et un très bon niveau en orthographe, mais quand on a le nez dans son propre texte depuis des heures (ou des mois !), le cerveau finit par combler les trous et on ne voit plus les évidences. Mon rôle est de vous apporter ce regard neuf et bienveillant. Je suis là pour traquer les coquilles invisibles, fluidifier la syntaxe, peaufiner vos tournures de phrases et dompter les règles (parfois obscures) de la typographie.
+
+Mon objectif, être le dernier rempart de sécurité indispensable pour que votre travail soit impeccable avant d'être partagé au monde.
+
+Au-delà des romans, j'ai un œil grand ouvert sur la pop culture. Je suis une grande passionnée de mangas, de jeux vidéo et de séries télévisées. Et s'il y a bien un domaine où la correction finale de la traduction me fait lever les yeux au ciel, c'est celui des sous-titres ! Qu'il s'agisse de plateformes de streaming ou de bulles de mangas, je rêve d'apporter ma pierre à l'édifice pour que les versions françaises soient enfin à la hauteur de leurs œuvres originales. À long terme, l'édition de livres scolaires est également un domaine qui me tient particulièrement à cœur.</p>
+
+                <div class="text-separator" role="separator" aria-hidden="true" data-aos="zoom-in" data-aos-duration="600">
+                    <span class="sep-line"></span>
+                    <span class="sep-ornament">✦</span>
+                    <span class="sep-line"></span>
+                </div>
+
+                <p>Comment on travaille ensemble ?
+
+Oubliez les échanges froids et les méthodes poussiéreuses. Je vous propose un accompagnement moderne, fluide et collaboratif :
+
+Mes outils pro : Pour vous garantir une précision chirurgicale, je m'appuie sur des références solides et j'ai pour projet d'intégrer très prochainement le logiciel professionnel Prolexis à ma routine de travail.
+
+
+
+Word & Google Docs : Ce sont mes deux formats favoris. Forte de mon expérience en alpha et bêta-lecture, j'appécie utiliser Google Docs pour son côté vivant. On peut y échanger des commentaires en direct, débattre d'une tournure de phrase ou ajuster le texte ensemble de manière ultra-fluide. (Si vous travaillez sur un autre format, pas de panique, on peut toujours en discuter !).
+
+
+
+Zéro stress sur l'organisation : On communique principalement par e-mail, mais j'adore utiliser WhatsApp pour nos échanges. Un petit message vocal de 30 secondes est souvent bien plus chaleureux et efficace qu'un long pavé écrit pour s'accorder sur une modification !
+
+Que vous soyez un étudiant qui peaufine son mémoire, un auteur de roman en quête de son premier lecteur, ou un professionnel soucieux de sa communication, je suis là pour vous aider à donner à vos écrits l'écrin qu'ils méritent.
+
+On en discute ?</p>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="ciblage-client">
+            <div data-aos="fade-right" id="Auteur">
+                <img src="assets/img/icons/invitatiion_18965072.png" alt="Auteur &amp; Auto-édition" width="512" height="512" loading="lazy">
+                <p class="ciblage-titre">Auteur &amp; Auto-édition</p>
+                <p>Confiez-moi votre manuscrit pour une relecture critique ou une correction finale avant publication.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="150" id="Etudiant">
+                <img src="assets/img/icons/student_5413895.png" alt="Étudiant" width="512" height="512" loading="lazy">
+                <p class="ciblage-titre">Étudiant</p>
+                <p>Sécurisez la réussite de votre thèse ou mémoire avec une correction académique rigoureuse.</p>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="300" id="Entreprise">
+                <img src="assets/img/icons/global-connection_2801369.png" alt="Entreprise &amp; Média" width="512" height="512" loading="lazy">
+                <p class="ciblage-titre">Entreprise &amp; Média</p>
+                <p>Optimisez votre communication web et vos rapports pour une image de marque irréprochable.</p>
+            </div>
+        </div>
+        <!-- ===== CONTACT ===== -->
+        <section class="contact-section">
+            <div data-aos="zoom-out" class="contact-card" id="contact">
+                <p class="contact-eyebrow">Une question ? Un projet ?</p>
+                <h2 class="contact-title">Contactez-moi</h2>
+                <p class="contact-subtitle">Je vous réponds sous 24h.</p>
+
+                <form class="contact-form" action="" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Votre nom</label>
+                            <span class="form-focus-bar"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Votre e-mail</label>
+                            <span class="form-focus-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Sujet</label>
+                        <span class="form-focus-bar"></span>
+                    </div>
+
+                    <div class="form-group textarea-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Parlez-moi de votre projet</label>
+                        <span class="form-focus-bar"></span>
+                    </div>
+
+                    <button type="submit" class="contact-btn">
+                        <span>Envoyer le message</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                             fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div data-aos="zoom-out-down" class="footer-inner">
+
+            <!-- Colonne 1 : liens légaux -->
+            <nav class="footer-col" aria-label="Liens légaux">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="politique-de-conf.html">Politique de confidentialité</a>
+                <a href="cgu.html">Conditions générales d'utilisation</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+            </nav>
+
+            <!-- Colonne 2 : navigation -->
+            <nav class="footer-col" aria-label="Navigation">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos de moi</a>
+                <a href="services-tarifs.html">Services &amp; tarifs</a>
+                <a href="avis.html">Avis client</a>
+            </nav>
+
+            <!-- Colonne 3 : réseaux sociaux -->
+            <div class="footer-col footer-socials">
+                <a href="#" aria-label="Instagram" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Barre copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Copyright. Tout droits réservés.</p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</body>
+</html>

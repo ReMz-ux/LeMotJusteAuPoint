@@ -1,0 +1,1021 @@
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#logo img {
+    width: 450px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: #d4789a;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#description {
+    font-size: 1.2rem;
+    color: #29274C;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto 40px auto;
+}
+
+#description p {
+    white-space: pre-line;
+    line-height: 1.9;
+}
+
+#description h2 {
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+#description ul.desc-list {
+    list-style: disc;
+    max-width: 520px;
+    margin: 10px auto 16px auto;
+    padding-left: 2.5em;
+    text-align: left;
+    line-height: 1.9;
+    font-size: 1.2rem;
+    color: #29274C;
+}
+
+#description ul.desc-list li::marker {
+    color: #d4789a;
+}
+
+.text-separator {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 420px;
+    margin: 44px auto;
+}
+
+.sep-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4789a, transparent);
+    opacity: 0.6;
+}
+
+.sep-ornament {
+    color: #d4789a;
+    font-size: 0.8rem;
+    letter-spacing: 0.55em;
+    opacity: 0.8;
+}
+
+/* =========================================
+   CIBLAGE CLIENT
+   ========================================= */
+.ciblage-client {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 60px auto 80px auto;
+    max-width: 1100px;
+    padding: 0 40px;
+}
+
+.ciblage-client>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    max-width: 320px;
+}
+
+.ciblage-client img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.ciblage-titre {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #d4789a;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.ciblage-client p:not(.ciblage-titre) {
+    font-size: 1.05rem;
+    color: #29274C;
+    line-height: 1.7;
+}
+
+/* =========================================
+   SECTION CONTACT
+   ========================================= */
+.contact-section {
+    padding: 80px 20px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 8px 48px rgba(212, 120, 154, 0.12);
+    padding: 60px 56px;
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+}
+
+.contact-eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #29274C;
+    margin-bottom: 10px;
+}
+
+.contact-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.6rem;
+    color: #d4789a;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    margin-top: 25px;
+}
+
+.contact-subtitle {
+    font-size: 0.95rem;
+    color: #a0a0b0;
+    margin-bottom: 48px;
+}
+
+/* --- Formulaire --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #f0e0e6;
+    padding: 14px 4px 10px;
+    font-size: 1rem;
+    color: #29274C;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+    font-family: inherit;
+}
+
+.form-group label {
+    position: absolute;
+    left: 4px;
+    top: 14px;
+    font-size: 0.95rem;
+    color: #b0a0aa;
+    pointer-events: none;
+    transition: top 0.25s ease, font-size 0.25s ease, color 0.25s ease;
+}
+
+/* Label flottant quand focus ou rempli */
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label {
+    top: -8px;
+    font-size: 0.75rem;
+    color: #d4789a;
+}
+
+.form-focus-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #d4789a;
+    transition: width 0.35s ease;
+}
+
+.form-group input:focus~.form-focus-bar,
+.form-group textarea:focus~.form-focus-bar {
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: transparent;
+}
+
+.textarea-group textarea {
+    min-height: 130px;
+    padding-top: 18px;
+}
+
+/* --- Bouton --- */
+.contact-btn {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #d4789a 0%, #e8a0bb 100%);
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    box-shadow: 0 6px 24px rgba(212, 120, 154, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 10px;
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px rgba(212, 120, 154, 0.45);
+}
+
+.contact-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 16px rgba(212, 120, 154, 0.3);
+}
+
+/* =========================================
+    Page À propos
+   ========================================= */
+
+/* En-tête de section */
+.certif-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 48px;
+}
+
+#diplome_logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 14px;
+    opacity: 0.85;
+}
+
+.certif-header h1 {
+    margin-top: 0;
+}
+
+/* Grille de certifications */
+.certifications {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+    padding: 0 40px;
+}
+
+/* Animation de survol pour les cartes de certification */
+.certification-item {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(212, 120, 154, 0.12);
+    padding: 40px 32px 36px;
+    flex: 1 1 260px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.certification-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(212, 120, 154, 0.22);
+}
+
+.certification-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.certification-item h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.9rem;
+    color: #d4789a;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.certification-item p {
+    font-size: 0.98rem;
+    color: #29274C;
+    line-height: 1.7;
+}
+
+h1#certif-title {
+    margin-bottom: 50px;
+}
+
+p#certif-subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    color: #29274C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p#description-certif {
+    font-size: 1.05rem;
+    color: #29274C;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+p#resume {
+    font-size: 1.05rem;
+    color: #29274C;
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto 80px auto;
+}
+
+/* =========================================
+   EN-TÊTE DE PAGE (commune)
+   ========================================= */
+.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 48px;
+}
+
+.page-icon {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 14px;
+    opacity: 0.85;
+}
+
+/* =========================================
+   SERVICES & TARIFS
+   ========================================= */
+.services-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1300px;
+    margin: 0 auto 80px auto;
+    padding: 0 40px;
+}
+
+.services-section>div:not(.cards-separator) {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(212, 120, 154, 0.12);
+    padding: 40px 40px 36px;
+    flex: 1 1 340px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.services-section>div:not(.cards-separator):hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(212, 120, 154, 0.22);
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.services-section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #d4789a;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.services-section h3 {
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #b0a0aa;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #f0e0e6;
+    width: 100%;
+    text-align: center;
+}
+
+.services-section h4 {
+    font-size: 1.05rem;
+    color: #29274C;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.services-section p {
+    font-size: 0.98rem;
+    color: #29274C;
+    line-height: 1.7;
+    margin-top: 14px;
+}
+
+/* =========================================
+   TARIFS CARDS
+   ========================================= */
+.tarif-card {
+    position: relative;
+}
+
+.cards-separator {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 8px;
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+.cards-separator::before,
+.cards-separator::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+}
+
+.cards-separator::before {
+    background: linear-gradient(to right, transparent, #f0c8db);
+}
+
+.cards-separator::after {
+    background: linear-gradient(to right, #f0c8db, transparent);
+}
+
+.cards-separator span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #d4789a;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.tarif-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.tarif-emoji {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.tarif-badge {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #d4789a;
+    background: #fce8f2;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #f0c8db;
+}
+
+.tarif-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+    width: 100%;
+    flex: 1;
+}
+
+.tarif-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f5e6ec;
+    text-align: left;
+}
+
+.tarif-list li:last-child {
+    border-bottom: none;
+}
+
+.tl-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #d4789a;
+}
+
+.tl-value {
+    font-size: 0.95rem;
+    color: #29274C;
+    line-height: 1.55;
+}
+
+.tarif-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #f0e0e6;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tf-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #29274C;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.tf-unit {
+    font-size: 0.68rem;
+    color: #b0a0aa;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   NOTES TARIFAIRES
+   ========================================= */
+.tarif-notes {
+    max-width: 780px;
+    margin: 0 auto 60px auto;
+    padding: 10px 40px 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.tarif-notes h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #29274C;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 28px 0 10px;
+}
+
+.tarif-notes h3:first-child {
+    margin-top: 0;
+}
+
+.tarif-notes p {
+    font-size: 0.95rem;
+    color: #29274C;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.tarif-notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarif-notes ul li {
+    font-size: 0.92rem;
+    color: #29274C;
+    line-height: 1.8;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.tarif-notes ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: #d4789a;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   CONTACT SERVICES
+   ========================================= */
+.contact-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto 80px auto;
+    padding: 56px 40px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-services p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.4rem;
+    color: #29274C;
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   MENTIONS LÉGALES
+   ========================================= */
+.legal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+    padding: 0 40px;
+}
+
+.legal-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(212, 120, 154, 0.10);
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.legal-card--full {
+    grid-column: 1 / -1;
+}
+
+.legal-card-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #d4789a;
+    line-height: 1.2;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f0e0e6;
+}
+
+.legal-card-title .acronym {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+}
+
+.legal-dl {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.legal-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 16px;
+    align-items: baseline;
+}
+
+.legal-row dt {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: #29274C;
+}
+
+.legal-row dd {
+    font-size: 0.97rem;
+    color: #29274C;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.legal-row dd a {
+    color: #d4789a;
+    text-decoration: none;
+    border-bottom: 1px solid #f0d0dd;
+    transition: border-color 0.2s ease;
+}
+
+.legal-row dd a:hover {
+    border-color: #d4789a;
+}
+
+.legal-text {
+    font-size: 0.97rem;
+    color: #29274C;
+    line-height: 1.75;
+}
+
+/* =========================================
+   AVIS CLIENTS
+   ========================================= */
+.avis-section {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 40px;
+}
+
+.avis-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+}
+
+.avis-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(212, 120, 154, 0.12);
+    padding: 32px 28px 28px;
+    flex: 1 1 260px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.avis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(212, 120, 154, 0.22);
+}
+
+.avis-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.star {
+    font-size: 1.4rem;
+    color: #e0ccd4;
+}
+
+.star.filled {
+    color: #d4789a;
+}
+
+.avis-texte {
+    font-size: 0.96rem;
+    color: #29274C;
+    line-height: 1.75;
+    flex: 1;
+    font-style: italic;
+}
+
+.avis-auteur {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid #f0e0e6;
+    padding-top: 16px;
+}
+
+.avis-initiales {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4789a 0%, #e8a0bb 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.avis-nom {
+    font-weight: 600;
+    font-size: 0.93rem;
+    color: #29274C;
+}
+
+.avis-date {
+    font-size: 0.8rem;
+    color: #b0a0aa;
+    margin-top: 2px;
+}
+
+/* --- Formulaire d'avis --- */
+.avis-form-section {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 100px;
+}
+
+.avis-form-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 8px 48px rgba(212, 120, 154, 0.12);
+    padding: 52px 48px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.avis-connexion-msg {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #29274C;
+    padding: 12px 0;
+}
+
+.avis-link-btn {
+    background: none;
+    border: none;
+    color: #d4789a;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.avis-link-btn:hover {
+    color: #b05070;
+}
+
+.avis-form-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.6rem;
+    color: #d4789a;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.avis-form-stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.star-input {
+    font-size: 2.2rem;
+    color: #e0ccd4;
+    cursor: pointer;
+    transition: color 0.15s ease, transform 0.15s ease;
+    user-select: none;
+}
+
+.star-input:hover,
+.star-input.active {
+    color: #d4789a;
+    transform: scale(1.15);
+}
+
+/* ─── Message si aucun avis ─── */
+.avis-vide {
+    text-align: center;
+    color: #b0a0aa;
+    font-size: 1rem;
+    padding: 40px 0;
+    width: 100%;
+}
+
+/* ─── Animation d'entrée pour une nouvelle carte ─── */
+@keyframes avis-entree {
+    from {
+        opacity: 0;
+        transform: translateY(-18px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.avis-card--new {
+    animation: avis-entree 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    box-shadow: 0 0 0 2px #d4789a, 0 16px 48px rgba(212, 120, 154, 0.28);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.site-footer {
+    background-color: #d4789a;
+    color: #ffffff;
+    padding: 56px 40px 0;
+    margin-top: 80px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-col a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Réseaux sociaux */
+.footer-socials {
+    gap: 20px;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    color: #ffffff;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+/* Barre copyright */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 18px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.75);
+}

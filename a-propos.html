@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les certifications et diplômes d'Helena Rigaud, correctrice professionnelle certifiée Voltaire et Robert — Le Mot Juste Au Point.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#d4789a">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://select-dinosaur-39.clerk.accounts.dev https://esm.sh https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://*.clerk.accounts.dev https://esm.sh; frame-src 'self' https://*.clerk.accounts.dev; worker-src 'self' blob:;">
+    <meta property="og:title" content="À propos — Le Mot Juste Au Point">
+    <meta property="og:description" content="Découvrez les certifications et diplômes d’Helena Rigaud, correctrice professionnelle certifiée.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <title>À propos — Le Mot Juste Au Point</title>
+    <link rel="icon" href="assets/img/logo01.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
+        src="https://select-dinosaur-39.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+        type="text/javascript"></script>
+    <script defer src="assets/js/clerk-api.js"></script>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+
+        <div class="header-logo">
+            <a href="index.html">Helena Rigaud</a>
+        </div>
+
+        <div class="header-account">
+            <a href="#" aria-label="Mon compte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== MENU LATÉRAL ===== -->
+    <nav class="side-nav" id="sideNav" aria-hidden="true">
+        <button class="close-btn" id="closeBtn" aria-label="Fermer le menu">&times;</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services-tarifs.html">Services &amp; Tarifs</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="avis.html">Avis</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENU ===== -->
+    <main>
+
+        <!-- Titre de section -->
+        <div class="certif-header" data-aos="fade-down">
+            <img src="assets/img/icons/diploma_18347565.png" id="diplome_logo" alt="Icône diplôme et certifications" width="512" height="512" fetchpriority="high">
+            <h1 id="certif-title" data-aos="fade-up" data-aos-delay="150">Certification</h1>
+            <!--  Mis en attente 
+            <p id="certif-subtitle">Le Certificat Voltaire & La Certification Le Robert</p> -->
+            <p id="description-certif" data-aos="fade-up" data-aos-delay="250">Parce que la maîtrise de la langue française ne souffre aucune approximation, mon expertise est adossée à la certification EFLC.</p>
+        </div>
+
+        <!-- Grille de certifications -->
+        <div class="certifications">
+            <div class="certification-item">
+                <img src="assets/img/icons/certificate_17700245.png" alt="Certification Voltaire" width="512" height="512" loading="lazy">
+                <h2>Certification <span style="font-family: 'Open Sans', sans-serif; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.05em;">EFLC</span></h2>
+                <p>Bien plus qu'un simple "bon niveau en orthographe", ce diplôme est une véritable référence dans le milieu professionnel de l'édition et de la rédaction. Il atteste d'une maîtrise rigoureuse et approfondie de la langue française, bien au-delà de ce que les correcteurs automatiques peuvent détecter.</p>
+            </div>
+    
+            <!--  En attente d'autre certification ou diplôme à ajouter
+            <div class="certification-item">
+                <img src="assets/img/icons/certificate_17700245.png" alt="Certification 3">
+                <h2>Certification 3</h2>
+                <p>Description de la certification 3.</p>
+            </div>
+            -->
+        </div>
+        
+        <p id="resume" data-aos="fade-up">En me confiant vos manuscrits, thèses ou rapports, vous ne choisissez pas seulement une relecture : vous vous offrez la sécurité et le prestige de certifications reconnues au plus haut niveau professionnel. Vos idées sont précieuses, mon rôle est de leur donner l'écrin irréprochable qu'elles méritent.</p>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner" data-aos="fade-up">
+
+            <!-- Colonne 1 : liens légaux -->
+            <nav class="footer-col" aria-label="Liens légaux">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="politique-de-conf.html">Politique de confidentialité</a>
+                <a href="cgu.html">Conditions générales d'utilisation</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+            </nav>
+
+            <!-- Colonne 2 : navigation -->
+            <nav class="footer-col" aria-label="Navigation">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos de moi</a>
+                <a href="services-tarifs.html">Services &amp; tarifs</a>
+                <a href="avis.html">Avis client</a>
+            </nav>
+
+            <!-- Colonne 3 : réseaux sociaux -->
+            <div class="footer-col footer-socials">
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Barre copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Copyright. Tout droits réservés.</p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</body>
+</html>

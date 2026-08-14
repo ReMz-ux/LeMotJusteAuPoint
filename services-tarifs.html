@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Relecture, correction et bêta-lecture par Helena Rigaud, correctrice professionnelle certifiée. Découvrez les services et demandez un devis gratuit.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#d4789a">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://select-dinosaur-39.clerk.accounts.dev https://esm.sh https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://*.clerk.accounts.dev https://esm.sh; frame-src 'self' https://*.clerk.accounts.dev; worker-src 'self' blob:;">
+    <meta property="og:title" content="Services &amp; Tarifs — Le Mot Juste Au Point">
+    <meta property="og:description" content="Relecture, correction et bêta-lecture par Helena Rigaud, correctrice professionnelle certifiée. Découvrez les services et demandez un devis gratuit.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <title>Services &amp; Tarifs — Le Mot Juste Au Point</title>
+    <link rel="icon" href="assets/img/logo01.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
+        src="https://select-dinosaur-39.clerk.accounts.dev/npm/@clerk/clerk-js@5/dist/clerk.browser.js"
+        type="text/javascript"></script>
+    <script defer src="assets/js/clerk-api.js"></script>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+
+        <div class="header-logo">
+            <a href="index.html">Helena Rigaud</a>
+        </div>
+
+        <div class="header-account">
+            <a href="#" aria-label="Mon compte">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== MENU LATÉRAL ===== -->
+    <nav class="side-nav" id="sideNav" aria-hidden="true">
+        <button class="close-btn" id="closeBtn" aria-label="Fermer le menu">&times;</button>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services-tarifs.html">Services &amp; Tarifs</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="avis.html">Avis</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTENU ===== -->
+    <main>
+        <!-- Titre + logo -->
+        <div class="page-header" data-aos="fade-down">
+        <img src="assets/img/icons/tax_17738210.png" id="services-tarifs-icon" alt="Icône de services et tarifs" class="page-icon" width="128" height="128" fetchpriority="high">
+        <h1 data-aos="fade-up" data-aos-delay="150">Services &amp; Tarifs</h1>
+        <div id="description" data-aos="fade-up" data-aos-delay="250">
+            <h2>Sublimons votre texte, ensemble. <br>
+
+Parce que chaque projet a son histoire et ses besoins, je prends soin de votre manuscrit avec une attention particulière.
+
+Mon objectif ? Faire briller vos idées tout en respectant fidèlement votre plume. <br>
+
+Au-delà de l'orthographe, de la grammaire et de la typographie, je vous accompagne pour :</h2>
+            <ul class="desc-list">
+                <li>Fluidifier votre style : adieu lourdeurs, répétitions et tournures alambriquées, votre texte gagne en clarté.</li>
+                <li>Affiner votre récit (bêta-lecture) : un regard extérieur attentif sur le rythme, la cohérence de l’intrigue et le développement de vos personnages.</li>
+            </ul>
+            <p>Vous gardez le contrôle total : toutes les corrections et suggestions vous sont proposées via le mode Suivi des modifications (Word ou Google Docs). Il vous suffit de valider ou de refuser chaque proposition en un clic !</p>
+        </div>
+        
+        </div>
+        <!-- Section des services proposés -->
+         <section class="services-section"> 
+        <div class="services-1" data-aos="fade-right">
+          <img src="assets/img/icons/book_2182786.png" alt="Icône représentant la relecture" class="service-icon" width="512" height="512" loading="lazy">
+          <h2>Relecture</h2>
+          <p>La touche finale indispensable avant toute publication. Votre document est prêt, mais vous souhaitez éliminer ces coquilles invisibles qui résistent aux relectures de l'auteur ? Je traque les ultimes erreurs typographiques, les doubles espaces et les oublis pour vous garantir un rendu professionnel irréprochable.</p>
+          <!-- En attente des tarifs
+           <h4> </h4> -->
+        </div>
+        <div class="services-2" data-aos="fade-up" data-aos-delay="150">
+            <img src="assets/img/icons/plume.png" alt="Icône représentant la correction" class="service-icon" width="512" height="512" loading="lazy">
+            <h2>Correction</h2>
+            <p>Une révision minutieuse pour révéler toute la puissance de vos mots. Au-delà de la chasse aux fautes d'orthographe et de grammaire, j'interviens sur la syntaxe, les répétitions et la concordance des temps. Mon Objectif est de fluidifier votre texte et enrichir votre vocabulaire, sans jamais dénaturer votre écrit.</p>
+            <!-- En attente des tarifs 
+             <h4>   </h4> -->
+        </div>
+        <div class="services-3" data-aos="fade-left" data-aos-delay="300">
+            <img src="assets/img/icons/loupe.png" alt="Icône représentant la bêta-lecture" class="service-icon" width="512" height="512" loading="lazy">
+            <h2>Beta Lecture</h2>
+            <p>Un regard neuf et bienveillant sur votre récit. Avant de peaufiner la forme, assurons-nous que le fond captive. Je plonge dans votre univers pour analyser l'intrigue, le rythme, la cohérence des personnages et la structure globale, afin de vous livrer un retour constructif qui fera décoller votre histoire</p>
+            <!-- En attente des tarifs 
+            <h4></h4> -->
+        </div>
+        <div class="cards-separator" data-aos="zoom-in" data-aos-duration="600">
+            <span>Nos formules tarifaires</span>
+        </div>
+        <div class="leclaireur tarif-card" data-aos="zoom-in-up">
+            <div class="tarif-card-top">
+                <span class="tarif-emoji">🧭</span>
+            </div>
+            <h2>L’Éclaireur</h2>
+            <ul class="tarif-list">
+                <li>
+                    <span class="tl-label">Objectif</span>
+                    <span class="tl-value">Bêta-lecture</span>
+                </li>
+                <li>
+                    <span class="tl-label">Services</span>
+                    <span class="tl-value">Analyse du rythme, de l'intrigue et des personnages.</span>
+                </li>
+            </ul>
+            <div class="tarif-footer">
+                <span class="tf-price">1,50 €</span>
+                <span class="tf-unit">/ 1 000 SEC</span>
+            </div>
+        </div>
+        <div class="lessentiel tarif-card" data-aos="zoom-in-up" data-aos-delay="100">
+            <div class="tarif-card-top">
+                <span class="tarif-emoji">🖊️</span>
+            </div>
+            <h2>L’Essentiel</h2>
+            <ul class="tarif-list">
+                <li>
+                    <span class="tl-label">Objectif</span>
+                    <span class="tl-value">Correction Standard</span>
+                </li>
+                <li>
+                    <span class="tl-label">Services</span>
+                    <span class="tl-value">Orthographe, grammaire, syntaxe et typographie.</span>
+                </li>
+            </ul>
+            <div class="tarif-footer">
+                <span class="tf-price">3,00 €</span>
+                <span class="tf-unit">/ 1 000 SEC</span>
+            </div>
+        </div>
+        <div class="lexigeant tarif-card" data-aos="zoom-in-up" data-aos-delay="200">
+            <div class="tarif-card-top">
+                <span class="tarif-emoji">🎯</span>
+            </div>
+            <h2>L’Exigeant</h2>
+            <ul class="tarif-list">
+                <li>
+                    <span class="tl-label">Objectif</span>
+                    <span class="tl-value">Correction Approfondie</span>
+                </li>
+                <li>
+                    <span class="tl-label">Services</span>
+                    <span class="tl-value">Correction standard + retravail du style et des lourdeurs.</span>
+                </li>
+            </ul>
+            <div class="tarif-footer">
+                <span class="tf-price">5,00 €</span>
+                <span class="tf-unit">/ 1 000 SEC</span>
+            </div>
+        </div>
+        <div class="le-specialiste tarif-card" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="tarif-card-top">
+                <span class="tarif-emoji">🎓</span>
+            </div>
+            <h2>Le Spécialiste</h2>
+            <ul class="tarif-list">
+                <li>
+                    <span class="tl-label">Objectif</span>
+                    <span class="tl-value">Textes complexes &amp; techniques</span>
+                </li>
+                <li>
+                    <span class="tl-label">Services</span>
+                    <span class="tl-value">Correction approfondie pour écrits universitaires, rapports professionnels ou documents exigeant une terminologie spécifique.</span>
+                </li>
+            </ul>
+            <div class="tarif-footer">
+                <span class="tf-price">7,00 €</span>
+                <span class="tf-unit">/ 1 000 SEC</span>
+            </div>
+        </div>
+        
+         </section>
+
+         <div class="tarif-notes" data-aos="fade-up">
+            <h3>Méthode de travail</h3>
+            <p>Pour préserver la fluidité de votre lecture, les fautes d'orthographe et de typographie évidentes sont directement corrigées dans le texte. Mes suggestions de style, de reformulation ou mes remarques de bêta-lecture sont insérées sous forme de commentaires en marge.</p>
+            <p><strong>Option Urgence</strong> (livraison sous 24h à 48h)&nbsp;: +25&nbsp; à 30&nbsp;% sur le total de la prestation (selon la faisabilité et le volume du texte).</p>
+            <h3> Mentions &amp; Informations utiles</h3>
+            <ul>
+                <li>SEC = Signes Espaces Comprises.</li>
+                <li>Tarifs indicatifs, devis détaillé établi après analyse d'un extrait (test gratuit).</li>
+                <li>TVA non applicable, article 293 B du CGI (Micro-entreprise).</li>
+            </ul>
+         </div>
+
+         <div class="contact-services" data-aos="zoom-in">
+            <p>Chaque projet est unique. Discutons-en !</p>
+            <a href="index.html#contact" class="contact-btn">Demander un devis gratuit</a>
+         </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-inner" data-aos="fade-up">
+
+            <!-- Colonne 1 : liens légaux -->
+            <nav class="footer-col" aria-label="Liens légaux">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="politique-de-conf.html">Politique de confidentialité</a>
+                <a href="cgu.html">Conditions générales d'utilisation</a>
+                <a href="cgv.html">Conditions générales de vente</a>
+            </nav>
+
+            <!-- Colonne 2 : navigation -->
+            <nav class="footer-col" aria-label="Navigation">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos de moi</a>
+                <a href="services-tarifs.html">Services &amp; tarifs</a>
+                <a href="avis.html">Avis client</a>
+            </nav>
+
+            <!-- Colonne 3 : réseaux sociaux -->
+            <div class="footer-col footer-socials">
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Barre copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Copyright. Tout droits réservés.</p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</body>
+</html>

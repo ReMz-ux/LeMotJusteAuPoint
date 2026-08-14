@@ -1,0 +1,172 @@
+/* =========================================
+   HEADER
+   ========================================= */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    background-color: #fdf6f6;
+    border-bottom: 1px solid #f0e0e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-logo a {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #d4789a;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.header-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-account a {
+    color: #d4789a;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.header-account a:hover {
+    opacity: 0.65;
+}
+
+.logout-btn {
+    padding: 5px 14px !important;
+    font-size: 0.7rem !important;
+    border-radius: 50px !important;
+    letter-spacing: 0.03em !important;
+    box-shadow: 0 3px 10px rgba(212, 120, 154, 0.3) !important;
+    margin-top: 0 !important;
+}
+
+/* =========================================
+   BOUTON BURGER
+   ========================================= */
+.burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.burger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #d4789a;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+/* Animation burger → croix */
+.burger-btn.is-open .burger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger-btn.is-open .burger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.burger-btn.is-open .burger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================================
+   OVERLAY
+   ========================================= */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 200;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-overlay.is-visible {
+    display: block;
+    opacity: 1;
+}
+
+/* =========================================
+   MENU LATÉRAL
+   ========================================= */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #fdf6f6;
+    z-index: 300;
+    padding: 80px 36px 40px;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.side-nav.is-open {
+    transform: translateX(0);
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.side-nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #d4789a;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.side-nav ul li a:hover {
+    opacity: 0.65;
+}
+
+/* =========================================
+   BOUTON FERMETURE
+   ========================================= */
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #d4789a;
+    line-height: 1;
+    padding: 4px 8px;
+    transition: opacity 0.2s;
+}
+
+.close-btn:hover {
+    opacity: 0.65;
+}
