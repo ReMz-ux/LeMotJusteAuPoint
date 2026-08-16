@@ -15,7 +15,7 @@
     <link rel="icon" href="assets/img/logo01.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/pages.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script defer crossorigin="anonymous"
         data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
@@ -76,13 +76,13 @@
 
 Moi, c’est Helena. Mon super-pouvoir ? Repérer la coquille qui s'est glissée dans votre flyer pro, la formule maladroite qui bloque la lecture de votre mémoire, ou le contresens qui gâche le rythme d'un thriller haletant. Bref, je peaufine vos écrits pour que vos lecteurs, vos clients ou vos jurys n'aient d'yeux que pour votre message.
 
-De lectrice compulsive à gardienne de vos mots
+De lectrice compulsive à gardienne de vos mots.
 
-Ma relation avec les livres a commencé à l’adolescence et ne s’est jamais arrêtée. Je suis ce qu’on appelle une lectrice compulsive. Romance contemporaine ou historique, fantasy, fantastique, thriller bien ficelé à la Dan Brown... j'ai dévoré des milliers de pages.
+Ma relation avec les livres a commencé à l’adolescence et ne s’est jamais arrêtée. Je suis ce qu’on appelle une dévoreuse de livres. Romance contemporaine ou historique, fantasy, fantastique, thriller bien ficelé à la Dan Brown... j'ai englouti des milliers de pages.
 
 Mais à force de lire, j’ai fait un constat frustrant. Qu'il s'agisse de romans (auto-édités ou en maison d'édition) ou même des sous-titres de mes séries préférées à la télé, j'ai vu passer pas mal de coquilles et de tournures de phrases assez lunaires qui gâchaient l'immersion. (Et quand on comprend un peu la langue d'origine, le décalage est parfois flagrant !).
 
-Pour moi, lorsqu'un lecteur ou un spectateur choisit de s'offrir une œuvre et d'y consacrer son temps précieux, il mérite une expérience parfaite. Un texte soigné et fluide, c'est la plus belle marque de respect qu'on puisse lui offrir !
+Pour moi, lorsqu'un lecteur ou un spectateur choisit de s'offrir une œuvre et d'y consacrer son temps précieux, il mérite une expérience satisfaisante. Un texte soigné et fluide, c'est la plus belle marque de respect qu'on puisse lui offrir !
 
 Après avoir partagé mes frustrations avec mes amies chroniqueuses littéraires, l’une d’elles m’a lancé : « Et pourquoi tu n'en ferais pas ton métier ? »
 
@@ -94,7 +94,7 @@ Ce fut le déclic. J’ai décidé de franchir le pas et de me former sérieusem
                     <span class="sep-line"></span>
                 </div>
 
-                <p>Ma philosophie : le respect du lecteur, sans dictature
+                <p>Ma philosophie : le respect du lecteur, sans dictature.
 
 Soyons honnêtes : le « Dieu de la correction » n’existe pas. L'erreur est humaine, et mon but n'est pas de corriger vos textes avec une règle sur les doigts. Je me vois plutôt comme votre première alliée.
 
@@ -142,7 +142,7 @@ On en discute ?</p>
             </div>
             <div data-aos="fade-left" data-aos-delay="300" id="Entreprise">
                 <img src="assets/img/icons/global-connection_2801369.png" alt="Entreprise &amp; Média" width="512" height="512" loading="lazy">
-                <p class="ciblage-titre">Entreprise &amp; Média</p>
+                <p class="ciblage-titre">Entreprises &amp; Médias</p>
                 <p>Optimisez votre communication web et vos rapports pour une image de marque irréprochable.</p>
             </div>
         </div>
@@ -151,9 +151,10 @@ On en discute ?</p>
             <div data-aos="zoom-out" class="contact-card" id="contact">
                 <p class="contact-eyebrow">Une question ? Un projet ?</p>
                 <h2 class="contact-title">Contactez-moi</h2>
-                <p class="contact-subtitle">Je vous réponds sous 24h.</p>
+                
 
-                <form class="contact-form" action="" novalidate>
+                <form class="contact-form" name="contact" method="POST" action="/" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
 
                     <div class="form-row">
                         <div class="form-group">
@@ -254,5 +255,6 @@ On en discute ?</p>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/forms.js"></script>
 </body>
 </html>

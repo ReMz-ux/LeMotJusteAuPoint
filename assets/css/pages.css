@@ -6,6 +6,7 @@
 
 #logo img {
     width: 450px;
+    max-width: calc(100vw - 40px);
 }
 
 h1 {
@@ -112,6 +113,23 @@ h1 {
     font-size: 1.05rem;
     color: #29274C;
     line-height: 1.7;
+}
+
+/* =========================================
+   RESPONSIVE MOBILE
+   ========================================= */
+@media (max-width: 640px) {
+    .ciblage-client {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .ciblage-client>div {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 /* =========================================
