@@ -488,6 +488,48 @@ p#resume {
    ========================================= */
 .tarif-card {
     position: relative;
+    flex: 1 1 280px !important;
+    max-width: 300px !important;
+}
+
+.la-relecture {
+    flex-basis: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 30px 40px !important;
+    text-align: center !important;
+}
+
+.la-relecture .tarif-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.la-relecture .relecture-item {
+    padding: 12px 0 !important;
+    border-bottom: none !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.la-relecture .tl-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #d4789a;
+    margin-bottom: 4px;
+}
+
+.la-relecture .tl-value {
+    font-size: 0.9rem;
+    color: #29274C;
+    line-height: 1.5;
+    margin-bottom: 4px;
 }
 
 .cards-separator {
@@ -613,6 +655,44 @@ p#resume {
     text-transform: uppercase;
 }
 
+/* Styles pour la section Relecture */
+.relecture-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.relecture-price {
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #29274C;
+    margin-top: 6px;
+    padding-top: 8px;
+}
+
+.relecture-why {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #f5e6ec;
+    text-align: center;
+}
+
+.relecture-why h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #d4789a;
+    margin-bottom: 12px;
+}
+
+.relecture-why p {
+    font-size: 0.9rem;
+    color: #29274C;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 /* =========================================
    NOTES TARIFAIRES
    ========================================= */
@@ -658,6 +738,17 @@ p#resume {
     line-height: 1.8;
     padding-left: 1.2em;
     position: relative;
+}
+
+.precision-info,
+.précision-info {
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.92rem;
+    color: #a0a0b0;
+    font-style: italic;
+    margin-top: 8px;
 }
 
 .tarif-notes ul li::before {
@@ -715,6 +806,13 @@ p#resume {
 
 .legal-card--full {
     grid-column: 1 / -1;
+}
+
+.legal-card--centered {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 900px;
+    justify-self: center;
 }
 
 .legal-card-title {
@@ -1023,6 +1121,41 @@ p#resume {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-3px);
     text-decoration: none;
+}
+
+/* Moyens de paiement */
+.footer-payments {
+    align-items: center;
+}
+
+.footer-payments-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    opacity: 0.95;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-payments-logos {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-logo {
+    height: 48px;
+    width: auto;
+    opacity: 0.9;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.payment-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* Barre copyright */

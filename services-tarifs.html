@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/pages.css?v=2">
+    <link rel="stylesheet" href="assets/css/promo-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script defer crossorigin="anonymous"
         data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
@@ -24,6 +25,66 @@
     <script defer src="assets/js/clerk-api.js"></script>
 </head>
 <body>
+
+    <!-- ===== BANDE PROMOTIONNELLE ===== -->
+    <!-- Pour modifier une promo : remplacez les textes entre les balises correspondantes. -->
+    <!-- Pour masquer la banderole : ajoutez style="display:none" sur la div.promo-band. -->
+    <div class="promo-band" role="region" aria-label="Promotions en cours">
+
+        <div class="promo-band__label" aria-hidden="true">
+            <span class="promo-band__label-icon">✦ ✦ ✦</span>
+            <span class="promo-band__label-text">Offres</span>
+        </div>
+
+        <div class="promo-band__viewport">
+            <div class="promo-band__scroll">
+
+                <!-- ======== GROUPE 1 (original) ======== -->
+                <div class="promo-band__group">
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre &eacute;tudiante</p>
+                        <p class="promo-band__item-offer"><strong>&minus;15&nbsp;%</strong> sur tous les projets</p>
+                        <p class="promo-band__item-note">✦ Sur justificatif &nbsp;&middot;&nbsp; Offre non cumulable</p>
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre de lancement</p>
+                        <p class="promo-band__item-offer"><strong>&minus;20&nbsp;%</strong> pour les 10 premiers clients</p>
+                        <p class="promo-band__item-note">✦ Places limit&eacute;es &nbsp;&middot;&nbsp; Offre non cumulable</p>
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                </div>
+
+                <!-- ======== GROUPE 2 (doublon pour boucle sans blanc) ======== -->
+                <div class="promo-band__group" aria-hidden="true">
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre &eacute;tudiante</p>
+                        <p class="promo-band__item-offer"><strong>&minus;15&nbsp;%</strong> sur tous les projets</p>
+                        <p class="promo-band__item-note">✦ Sur justificatif &nbsp;&middot;&nbsp; Offre non cumulable</p>
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre de lancement</p>
+                        <p class="promo-band__item-offer"><strong>&minus;20&nbsp;%</strong> pour les 10 premiers clients</p>
+                        <p class="promo-band__item-note">✦ Places limit&eacute;es &nbsp;&middot;&nbsp; Offre non cumulable</p>
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <!-- ===== HEADER ===== -->
     <header class="site-header">
@@ -114,27 +175,27 @@ Au-delà de l'orthographe, de la grammaire et de la typographie, je vous accompa
         </div>
         <div class="leclaireur tarif-card" data-aos="zoom-in-up">
             <div class="tarif-card-top">
-                <span class="tarif-emoji">🧭</span>
+                
             </div>
             <h2>L’éclaireur</h2>
             <ul class="tarif-list">
                 <li>
                     <span class="tl-label">Objectif</span>
-                    <span class="tl-value">Bêta-lecture</span>
+                    <span class="tl-value">Bêta-lecture / Relecture</span>
                 </li>
                 <li>
                     <span class="tl-label">Services</span>
-                    <span class="tl-value">Analyse du rythme, de l'intrigue et des personnages.</span>
+                    <span class="tl-value">Lecture critique axée uniquement sur le fond : analyse de l'intrigue, du rythme, de la cohérence globale et du développement des personnages. Aucune correction orthotypographique.</span>
                 </li>
             </ul>
             <div class="tarif-footer">
-                <span class="tf-price">1,50 €</span>
-                <span class="tf-unit">/ 1 000 SEC</span>
+                <span class="tf-price">2,00€</span>
+                <span class="tf-unit">/ 1 000 SEC*</span>
             </div>
         </div>
         <div class="lessentiel tarif-card" data-aos="zoom-in-up" data-aos-delay="100">
             <div class="tarif-card-top">
-                <span class="tarif-emoji">🖊️</span>
+                
             </div>
             <h2>L’essentiel</h2>
             <ul class="tarif-list">
@@ -144,17 +205,17 @@ Au-delà de l'orthographe, de la grammaire et de la typographie, je vous accompa
                 </li>
                 <li>
                     <span class="tl-label">Services</span>
-                    <span class="tl-value">Orthographe, grammaire, syntaxe et typographie.</span>
+                    <span class="tl-value">Correction orthotypographique complète (orthographe, grammaire, conjugaison, ponctuation, typographie, règles de présentation) et chassé-croisé systématique des répétitions. Adaptée à tous les manuscrits, y compris les travaux universitaires (mémoires, thèses).</span>
                 </li>
             </ul>
             <div class="tarif-footer">
-                <span class="tf-price">3,00 €</span>
-                <span class="tf-unit">/ 1 000 SEC</span>
+                <span class="tf-price">4,00 €</span>
+                <span class="tf-unit">/ 1 000 SEC*</span>
             </div>
         </div>
         <div class="lexigeant tarif-card" data-aos="zoom-in-up" data-aos-delay="200">
             <div class="tarif-card-top">
-                <span class="tarif-emoji">🎯</span>
+                
             </div>
             <h2>L’exigeant</h2>
             <ul class="tarif-list">
@@ -164,44 +225,93 @@ Au-delà de l'orthographe, de la grammaire et de la typographie, je vous accompa
                 </li>
                 <li>
                     <span class="tl-label">Services</span>
-                    <span class="tl-value">Correction standard + peaufinage du style et des lourdeurs.</span>
+                    <span class="tl-value">Correction Standard + retravail de la fluidité, élimination des lourdeurs de style et propositions de reformulations ciblées.</span>
                 </li>
             </ul>
             <div class="tarif-footer">
-                <span class="tf-price">5,00 €</span>
-                <span class="tf-unit">/ 1 000 SEC</span>
+                <span class="tf-price">6,00 €</span>
+                <span class="tf-unit">/ 1 000 SEC*</span>
             </div>
         </div>
         <div class="le-specialiste tarif-card" data-aos="zoom-in-up" data-aos-delay="300">
             <div class="tarif-card-top">
-                <span class="tarif-emoji">🎓</span>
+                
             </div>
             <h2>Le spécialiste</h2>
             <ul class="tarif-list">
                 <li>
                     <span class="tl-label">Objectif</span>
-                    <span class="tl-value">Textes complexes &amp; techniques</span>
+                    <span class="tl-value">Textes complexes &amp; techniques / Haute éxigence</span>
                 </li>
                 <li>
                     <span class="tl-label">Services</span>
-                    <span class="tl-value">Correction approfondie pour écrits universitaires, rapports professionnels ou documents exigeants une terminologie spécifique.</span>
+                    <span class="tl-value">Prise en charge d'ouvrages exigeants non universitaires (droit, médecine, politique, sciences, essais techniques) nécessitant une attention particulière, une vérification orthographique poussée et une recherche terminologique complexe sur le vocabulaire spécialisé.</span>
                 </li>
             </ul>
             <div class="tarif-footer">
-                <span class="tf-price">7,00 €</span>
-                <span class="tf-unit">/ 1 000 SEC</span>
+                <span class="tf-price">8,00 €</span>
+                <span class="tf-unit">/ 1 000 SEC*</span>
             </div>
         </div>
-        
-         </section>
+        <div class="la-relecture tarif-card" data-aos="zoom-in-up" data-aos-delay="400">
+            <div class="tarif-card-top">
+                
+            </div>
+            <h2>Réécriture</h2>
+            <ul class="tarif-list relecture-list">
+                <li class="relecture-item">
+                    <span class="tl-label">Réécriture seule</span>
+                    <span class="tl-value">Travail de style approfondi, restructuration des phrases, suppression des lourdeurs et amélioration du vocabulaire.</span>
+                    <span class="relecture-price">6 € / 1 000 signes</span>
+                </li>
+                <li class="relecture-item">
+                    <span class="tl-label">Pack Combiné</span>
+                    <span class="tl-value">Réécriture stylistique poussée accompagnée d'un travail de correction orthotypographique minutieux, nécessitant plusieurs passes de relectures approfondies, pour livrer un texte parfaitement prêt à être publié.</span>
+                    <span class="relecture-price">9 € / 1 000 SEC</span>
+                </li>
+                <li class="relecture-item">
+                    <span class="tl-label">Réécriture sur Traduction Humaine</span>
+                    <span class="tl-value">Retravail stylistique ajusté selon le niveau de maîtrise de l'auteur/traducteur (harmonisation des tournures, francisation naturelle, gommage des lourdeurs).</span>
+                    <span class="relecture-price">À partir de 6 € / 1 000 SEC (Réécriture seule) <br>À partir de 8 € / 1 000 SEC (Pack Réécriture + Correction)</span>
+                </li>
+                <li class="relecture-item">
+                    <span class="tl-label">Réécriture sur Traduction par IA</span>
+                    <span class="tl-value">Correction en profondeur des calques de langue, suppression du style rigide ou artificiel propre à l'IA, réinjection de fluidité narrative et contrôle orthotypographique complet.</span>
+                    <span class="relecture-price">À partir de 8 € / 1 000 SEC (Réécriture seule) <br>À partir de 11 € / 1 000 SEC (Pack Réécriture + Correction)</span>
+                </li>
+            </ul>
+            <div class="relecture-why">
+                <h3>Pourquoi ces tarifs ?</h3>
+                <p><em>La réécriture d'un texte généré par IA est un travail de reconstruction créative et technique d'une exigence extrême, nécessitant de retravailler presque chaque phrase. À titre d'exemple, la prise en charge d'un roman de 350 à 400 pages (env. 500 000 à 600 000 signes) représente entre <strong>140 et 170 heures de concentration intense</strong>, étalées sur plusieurs semaines. Rapporté au temps passé, ce tarif équivaut à un taux horaire net d'environ <strong>30 € / heure</strong> — le juste prix d'un travail minutieux pour rendre votre livre parfaitement publiable.</em></p>
+            </div>
+        </div>
 
-         <div class="tarif-notes" data-aos="fade-up">
-            <h3>Méthode de travail</h3>
-            <p>Pour préserver la fluidité de votre lecture, les fautes d'orthographe et de typographie évidentes sont directement corrigées dans le texte. Mes suggestions de style, de reformulation ou mes remarques de bêta-lecture sont insérées sous forme de commentaires en marge.</p>
-            <p><strong>Option Urgence</strong> (livraison sous 24h à 48h)&nbsp;: +25&nbsp; à 30&nbsp;% sur le total de la prestation (selon la faisabilité et le volume du texte).</p>
-            <h3> Mentions &amp; Informations utiles</h3>
+        <p class="precision-info" data-aos="fade-up">*SEC = Signes Espaces Comprises.</p>
+    </section>
+
+    <div class="tarif-notes" data-aos="fade-up">
+                
+            <h3>Règlements depuis l'étranger</h3>
+            <p>Tous les tarifs sont indiqués en euros (€). La conversion dans votre monnaie locale s'effectue automatiquement au moment du paiement. <br>
+<br>
+<strong>Suisse</strong> : Le virement bancaire <strong>SEPA</strong> est recommandé (simple et généralement sans frais supplémentaires).<br>
+<br>
+<strong>Canada & hors zone euro</strong> : Le paiement via <strong>PayPal</strong> est recommandé pour éviter les frais bancaires internationaux.<br>
+<br>
+<strong>Auteurs de la francophonie internationale (Maghreb, Afrique subsaharienne, Haïti, Liban, etc...)</strong> : Les prestations de correction s'appliquent sur le français standard (normes éditoriales et académiques internationales). Le règlement s'effectue via <strong>PayPal</strong> ou par virement bancaire.</p>
+            <br>
+            <h3>Méthode de travail et demande de devis</h3>
+            <ul class="desc-list">
+                <li>Pour préserver la fluidité de votre lecture, les fautes d'orthographe et de typographie évidentes sont directement corrigées dans le texte. Mes suggestions de style, de reformulation ou mes remarques de bêta-lecture sont insérées sous forme de commentaires en marge.</li>
+                <li><strong>Prise de contact</strong> : Vous me présentez brièvement votre projet. Je vous fournirai un questionnaire simple à remplir pour m'aider à cibler l'essentiel (genre littéraire, volume total en nombre de signes espaces comprises, public cible, besoins spécifiques, etc.).</li>
+                <li><strong>Envoi de l'extrait d'évaluation</strong> : Pour me permettre d'évaluer la charge de travail réelle et de vous proposer un tarif au plus juste, je vous invite à me fournir <strong>un extrait d'une dizaine de pages situé idéalement au cœur ou vers la fin de votre manuscrit </strong>(plutôt que les tout premiers chapitres, généralement très travaillés). C'est ainsi que l'on évalue au mieux votre rythme de croisière et la complexité réelle de réécriture ou de correction.</li>
+                <li><strong>Devis personnalisé et essai gratuit</strong> : À partir de cet extrait, je vous établis un devis sur mesure, accompagné (sur demande) d'un essai de correction sur 1 à 2 pages. Cela vous permet de vérifier si ma méthodologie et mes propositions correspondent à vos attentes, et d'ajuster ensemble notre fonctionnement si nécessaire avant tout engagement.</li>
+                <li><strong>Validation et planning</strong> : Une fois le devis validé et l'acompte versé, nous bloquons les dates dans le planning et la prestation peut démarrer !</li> <br>
+            </ul>
+            <p><strong>Option urgence</strong> (livraison sous 24h à 48h)&nbsp;: +25&nbsp; à 30&nbsp;% sur le total de la prestation (selon la faisabilité et le volume du texte).</p>
+            <h3> Mentions et Informations utiles</h3>
             <ul>
-                <li>SEC = Signes Espaces Comprises.</li>
+                
                 <li>Tarifs indicatifs, devis détaillé établi après analyse d'un extrait (test gratuit).</li>
                 <li>TVA non applicable, article 293 B du CGI (Micro-entreprise).</li>
             </ul>
@@ -230,13 +340,15 @@ Au-delà de l'orthographe, de la grammaire et de la typographie, je vous accompa
             <nav class="footer-col" aria-label="Navigation">
                 <a href="index.html">Accueil</a>
                 <a href="a-propos.html">À propos de moi</a>
-                <a href="services-tarifs.html">Services &amp; tarifs</a>
+                <a href="services-tarifs.html">Services et tarifs</a>
                 <a href="avis.html">Avis client</a>
             </nav>
 
             <!-- Colonne 3 : réseaux sociaux -->
             <div class="footer-col footer-socials">
-                <a href="#" aria-label="Instagram">
+                <!-- Instagram et Facebook en attente d'activation -->
+                
+                <a href="https://www.instagram.com/le.mot.juste.au.point?stkn=MTZmbXRtZXd3enh2Nw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor" stroke-width="1.8"
                          stroke-linecap="round" stroke-linejoin="round">
@@ -245,14 +357,15 @@ Au-delà de l'orthographe, de la grammaire et de la typographie, je vous accompa
                         <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
                     </svg>
                 </a>
-                <a href="#" aria-label="Facebook">
+                <!-- <a href="#" aria-label="Facebook">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor" stroke-width="1.8"
                          stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                     </svg>
                 </a>
-                <a href="#" aria-label="LinkedIn">
+                -->
+                <a href="https://www.linkedin.com/in/rigaud-helena-55a77610a" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor" stroke-width="1.8"
                          stroke-linecap="round" stroke-linejoin="round">

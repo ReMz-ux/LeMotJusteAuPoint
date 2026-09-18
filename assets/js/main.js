@@ -85,3 +85,6 @@ if (window.AOS) {
         offset: 60
     });
 }
+
+
+// création d'une banderole mouvante pour afficher les promotions

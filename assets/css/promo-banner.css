@@ -1,0 +1,223 @@
+/* =========================================
+   BANDE PROMOTIONNELLE MOUVANTE
+   ========================================= */
+
+.promo-band {
+    background: linear-gradient(90deg, #fdf6f6 0%, #fdf6f6 50%, #fdf6f6 100%);
+    border-bottom: 1px solid rgba(212, 120, 154, 0.22);
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    height: 90px;
+}
+
+/* Décale le header sous la banderole */
+body:has(.promo-band) .site-header {
+    top: 90px;
+}
+
+/* Compense header (65px) + banderole (90px) */
+body:has(.promo-band) {
+    padding-top: 155px;
+}
+
+/* ---- Étiquette gauche ---- */
+.promo-band__label {
+    background-color: #d4789a;
+    color: #fff;
+    padding: 0 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 2px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.18);
+    min-width: 96px;
+}
+
+.promo-band__label-icon {
+    font-size: 0.75rem;
+    opacity: 0.75;
+    letter-spacing: 0.25em;
+}
+
+.promo-band__label-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.4rem;
+    line-height: 1;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+}
+
+/* ---- Zone de défilement ---- */
+.promo-band__viewport {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* Fondu sur les bords */
+    -webkit-mask-image: linear-gradient(to right,
+            transparent 0,
+            rgba(0, 0, 0, 1) 44px,
+            rgba(0, 0, 0, 1) calc(100% - 44px),
+            transparent 100%);
+    mask-image: linear-gradient(to right,
+            transparent 0,
+            rgba(0, 0, 0, 1) 44px,
+            rgba(0, 0, 0, 1) calc(100% - 44px),
+            transparent 100%);
+}
+
+/* ---- Conteneur animé (2 groupes identiques = boucle sans couture) ---- */
+.promo-band__scroll {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: promoBandScroll 45s linear infinite;
+    /* 2 groupes → -50% = 1 boucle sans blanc */
+    will-change: transform;
+}
+
+.promo-band__scroll:hover {
+    animation-play-state: paused;
+}
+
+.promo-band__label-icon {
+    color: #fdf6f6;
+}
+
+@keyframes promoBandScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ---- Groupe (répété 2× pour la boucle) ---- */
+.promo-band__group {
+    display: flex;
+    align-items: center;
+    /* Chaque groupe = 1 viewport → -50% = boucle sans blanc */
+    min-width: 100vw;
+    justify-content: space-evenly;
+}
+
+/* ---- Séparateur ---- */
+.promo-band__sep {
+    color: #d4789a;
+    opacity: 0.45;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+    padding: 0 8px;
+    letter-spacing: 0.3em;
+    user-select: none;
+}
+
+/* ---- Item promotionnel ---- */
+.promo-band__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    cursor: default;
+}
+
+.promo-band__item-service {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.9rem;
+    color: #d4789a;
+    line-height: 1;
+    margin: 0 0 3px;
+}
+
+.promo-band__item-offer {
+    font-size: 1rem;
+    color: #d4789a;
+    line-height: 1.3;
+    letter-spacing: 0.025em;
+    margin: 0 0 3px;
+}
+
+.promo-band__item-offer strong {
+    color: #d4789a;
+    font-weight: 700;
+}
+
+.promo-band__item-note {
+    font-size: 0.75rem;
+    color: #d4789a;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .promo-band {
+        height: 86px;
+    }
+
+    body:has(.promo-band) .site-header {
+        top: 86px;
+    }
+
+    body:has(.promo-band) {
+        padding-top: 151px;
+    }
+
+    .promo-band__label {
+        padding: 0 14px;
+        min-width: 76px;
+    }
+
+    .promo-band__label-text {
+        font-size: 1.2rem;
+    }
+
+    .promo-band__item {
+        padding: 0 30px;
+    }
+
+    .promo-band__group {
+        min-width: max-content;
+        justify-content: flex-start;
+    }
+
+    .promo-band__item-service {
+        font-size: 1rem;
+    }
+
+    .promo-band__item-offer {
+        font-size: 0.74rem;
+    }
+
+    .promo-band__item-note {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-band__label-icon {
+        display: none;
+    }
+
+    .promo-band__item {
+        padding: 0 22px;
+    }
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/pages.css?v=2">
+    <link rel="stylesheet" href="assets/css/promo-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script defer crossorigin="anonymous"
         data-clerk-publishable-key="pk_test_c2VsZWN0LWRpbm9zYXVyLTM5LmNsZXJrLmFjY291bnRzLmRldiQ"
@@ -24,6 +25,66 @@
     <script defer src="assets/js/clerk-api.js"></script>
 </head>
 <body>
+
+    <!-- ===== BANDE PROMOTIONNELLE ===== -->
+    <!-- Pour modifier une promo : remplacez les textes entre les balises correspondantes. -->
+    <!-- Pour masquer la banderole : ajoutez style="display:none" sur la div.promo-band. -->
+    <div class="promo-band" role="region" aria-label="Promotions en cours">
+
+        <div class="promo-band__label" aria-hidden="true">
+            <span class="promo-band__label-icon">✦ ✦ ✦</span>
+            <span class="promo-band__label-text">Promotions</span>
+        </div>
+
+        <div class="promo-band__viewport">
+            <div class="promo-band__scroll">
+
+                <!-- ======== GROUPE 1 (original) ======== -->
+                <div class="promo-band__group">
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre &eacute;tudiante</p>
+                        <p class="promo-band__item-offer"><strong>&minus;15&nbsp;%</strong> sur tous les projets</p>
+                        <p class="promo-band__item-note">✦ Sur justificatif</p>
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre de lancement</p>
+                        <p class="promo-band__item-offer"><strong>&minus;20&nbsp;%</strong> pour les 10 premiers clients</p>
+                    
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                </div>
+
+                <!-- ======== GROUPE 2 (doublon pour boucle sans blanc) ======== -->
+                <div class="promo-band__group" aria-hidden="true">
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre &eacute;tudiante</p>
+                        <p class="promo-band__item-offer"><strong>&minus;15&nbsp;%</strong> sur tous les projets</p>
+                        <p class="promo-band__item-note">✦ Sur justificatif</p>
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                    <div class="promo-band__item">
+                        <p class="promo-band__item-service">Offre de lancement</p>
+                        <p class="promo-band__item-offer"><strong>&minus;20&nbsp;%</strong> pour les 10 premiers clients</p>
+                    
+                    </div>
+
+                    <span class="promo-band__sep" aria-hidden="true">✦ ✦ ✦</span>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <!-- ===== HEADER ===== -->
     <header data-aos="fade-down" class="site-header">
@@ -58,7 +119,7 @@
         <button class="close-btn" id="closeBtn" aria-label="Fermer le menu">&times;</button>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="services-tarifs.html">Services &amp; Tarifs</a></li>
+            <li><a href="services-tarifs.html">Services et Tarifs</a></li>
             <li><a href="a-propos.html">À propos</a></li>
             <li><a href="avis.html">Avis</a></li>
         </ul>
@@ -67,7 +128,7 @@
     <!-- ===== CONTENU ===== -->
     <main>
         <div data-aos="zoom-in" id="logo">
-        <img  src="assets/img/logo01.png" alt="Logo Le Mot Juste Au Point">
+        <img  src="assets/img/logo02.png" alt="Logo Le Mot Juste Au Point">
         </div>
         <div data-aos="zoom-in-down">
             <h1>L'art de sublimer vos écrits avec rigueur et bienveillance.</h1>
@@ -132,7 +193,7 @@ On en discute ?</p>
         <div data-aos="fade-up" class="ciblage-client">
             <div data-aos="fade-right" id="Auteur">
                 <img src="assets/img/icons/invitatiion_18965072.png" alt="Auteur &amp; Auto-édition" width="512" height="512" loading="lazy">
-                <p class="ciblage-titre">Auteur &amp; Auto-édition</p>
+                <p class="ciblage-titre">Auteur et Auto-édition</p>
                 <p>Confiez-moi votre manuscrit pour une relecture critique ou une correction finale avant publication.</p>
             </div>
             <div data-aos="fade-up" data-aos-delay="150" id="Etudiant">
@@ -142,7 +203,7 @@ On en discute ?</p>
             </div>
             <div data-aos="fade-left" data-aos-delay="300" id="Entreprise">
                 <img src="assets/img/icons/global-connection_2801369.png" alt="Entreprise &amp; Média" width="512" height="512" loading="lazy">
-                <p class="ciblage-titre">Entreprises &amp; Médias</p>
+                <p class="ciblage-titre">Entreprises et Médias</p>
                 <p>Optimisez votre communication web et vos rapports pour une image de marque irréprochable.</p>
             </div>
         </div>
@@ -212,13 +273,14 @@ On en discute ?</p>
             <nav class="footer-col" aria-label="Navigation">
                 <a href="index.html">Accueil</a>
                 <a href="a-propos.html">À propos de moi</a>
-                <a href="services-tarifs.html">Services &amp; tarifs</a>
+                <a href="services-tarifs.html">Services et tarifs</a>
                 <a href="avis.html">Avis client</a>
             </nav>
 
             <!-- Colonne 3 : réseaux sociaux -->
             <div class="footer-col footer-socials">
-                <a href="#" aria-label="Instagram" rel="noopener noreferrer">
+                <!-- Instagram et Facebook en attente d'activation -->
+                <a href="https://www.instagram.com/le.mot.juste.au.point?stkn=MTZmbXRtZXd3enh2Nw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor" stroke-width="1.8"
                          stroke-linecap="round" stroke-linejoin="round">
@@ -227,6 +289,7 @@ On en discute ?</p>
                         <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
                     </svg>
                 </a>
+                <!--
                 <a href="#" aria-label="Facebook" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor" stroke-width="1.8"
@@ -234,7 +297,8 @@ On en discute ?</p>
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                     </svg>
                 </a>
-                <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
+                -->
+                <a href="https://www.linkedin.com/in/rigaud-helena-55a77610a" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                          fill="none" stroke="currentColor" stroke-width="1.8"
                          stroke-linecap="round" stroke-linejoin="round">
@@ -243,6 +307,15 @@ On en discute ?</p>
                         <circle cx="4" cy="4" r="2"/>
                     </svg>
                 </a>
+            </div>
+
+            <!-- Colonne 4 : moyens de paiement -->
+            <div class="footer-col footer-payments">
+                <p class="footer-payments-label">Moyens de paiement acceptés</p>
+                <div class="footer-payments-logos">
+                    <img src="assets/img/logos/logo-paypal.png" alt="PayPal" class="payment-logo">
+                    <img src="assets/img/icons/paiement-par-carte-de-credit.png" alt="Carte bancaire" class="payment-logo">
+                </div>
             </div>
 
         </div>
