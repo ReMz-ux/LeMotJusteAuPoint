@@ -1,0 +1,46 @@
+=== AUDIT RESPONSIVE SMARTPHONE ===
+
+POINTS DE RUPTURE ACTUELS:
+✓ @media (max-width: 768px) - Promo banner
+✓ @media (max-width: 640px) - Ciblage client
+✓ @media (max-width: 480px) - Promo banner ultra petit
+
+PROBLÈMES IDENTIFIÉS:
+
+1. LOGO PRINCIPAL (index.html)
+   - width: 450px → Trop grand pour mobile (< 375px)
+   - max-width pas défini correctement
+
+2. GRILLES ET FLEXBOX
+   - .certifications: grid sans media query mobile
+   - .services-section: grid sans media query mobile
+   - .legal-grid: grid 2 colonnes (devrait être 1 col sur mobile)
+   - .avis-grid: flex sans adaptation mobile
+
+3. FORMULAIRE
+   - .form-row: gap 24px trop grand sur mobile
+   - .contact-card: padding 60px 56px trop large (padding: 60px sur mobile?)
+   - Font-size inputs: 1rem (16px) OK mais labels pas visibles
+
+4. SECTION CONTACT
+   - .contact-title: font-size 3.6rem trop grand (mobile nécessite ~1.8rem)
+
+5. HEADER
+   - .header-logo: font-size 2.2rem (acceptable mais peut être réduit à 1.4rem)
+   - Side-nav: width 280px bon pour 375px+
+
+6. PADDING/MARGINS GLOBALES
+   - Beaucoup de padding 40px hardcodé (devrait être 20px sur mobile)
+   - Beaucoup de padding 80px vertical (devrait être 40px sur mobile)
+
+7. IMAGES SANS MAX-WIDTH
+   - Manque max-width: 100% sur les images de services
+   - Icônes peuvent déborder
+
+PRIORITÉ HAUTE:
+- Ajouter media query pour < 768px pour TOUTES les sections
+- Réduire les typos sur mobile (h1, h2, contact-title)
+- Adapter les grilles (2 col → 1 col)
+- Réduire padding/margin
+- Logo 450px → max 90vw sur mobile
+

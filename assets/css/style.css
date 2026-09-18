@@ -40,3 +40,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 65px;
 }
+
+/* Assurer que les images ne débordent jamais */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

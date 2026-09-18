@@ -1170,3 +1170,454 @@ p#resume {
     font-size: 0.82rem;
     color: rgba(255, 255, 255, 0.75);
 }
+
+/* =========================================
+   RESPONSIVE COMPLET MOBILE (≤768px)
+   ========================================= */
+@media (max-width: 768px) {
+
+    /* --- TYPOS ET ESPACEMENTS GLOBAUX --- */
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* --- LOGO PRINCIPAL --- */
+    #logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #logo img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    #description {
+        max-width: 100%;
+        margin: 15px 20px 30px;
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    #description ul.desc-list {
+        max-width: 100%;
+        padding-left: 1.8em;
+        font-size: 1rem;
+    }
+
+    /* --- SECTIONS GÉNÉRALÉS --- */
+    body {
+        padding-top: 65px;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    /* --- CIBLAGE CLIENT --- */
+    .ciblage-client {
+        gap: 30px;
+        margin: 40px auto 60px;
+        padding: 0 20px;
+    }
+
+    .ciblage-client>div {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .ciblage-client img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ciblage-titre {
+        font-size: 1.4rem;
+    }
+
+    .ciblage-client p {
+        font-size: 0.95rem;
+    }
+
+    /* --- CERTIFICATIONS --- */
+    .page-header {
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .page-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    #diplome_logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .certifications {
+        gap: 20px;
+        margin: 0 auto 60px;
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certification-item {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .certification-item img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 15px;
+    }
+
+    .certification-item h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .certification-item p {
+        font-size: 0.9rem;
+    }
+
+    h1#certif-title {
+        margin-bottom: 30px;
+    }
+
+    p#certif-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    p#description-certif,
+    p#resume {
+        font-size: 0.95rem;
+        max-width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0 10px;
+    }
+
+    /* --- SERVICES & TARIFS --- */
+    .services-section {
+        gap: 20px;
+        margin: 0 auto 60px;
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-section>div:not(.cards-separator) {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .service-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .services-section p {
+        font-size: 0.9rem;
+    }
+
+    #services-tarifs-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* --- CARTES TARIFS --- */
+    .tarif-card {
+        flex: 1 1 auto !important;
+        max-width: 100% !important;
+        padding: 25px 20px !important;
+    }
+
+    .la-relecture {
+        padding: 25px 20px !important;
+        flex-direction: column;
+    }
+
+    .la-relecture .tarif-list {
+        gap: 15px;
+    }
+
+    .tarif-card-top {
+        margin-bottom: 12px;
+    }
+
+    .tarif-emoji {
+        font-size: 1.6rem;
+    }
+
+    .tarif-badge {
+        font-size: 0.6rem;
+        padding: 3px 10px;
+    }
+
+    .tl-label {
+        font-size: 0.6rem;
+    }
+
+    .tl-value {
+        font-size: 0.88rem;
+    }
+
+    .tarif-footer {
+        padding-top: 15px;
+        margin-top: auto;
+    }
+
+    .tf-price {
+        font-size: 1.3rem;
+    }
+
+    .tarif-notes {
+        padding: 0 20px;
+        margin: 0 auto 40px;
+    }
+
+    .tarif-notes h3 {
+        margin-top: 20px;
+        font-size: 0.85rem;
+    }
+
+    .tarif-notes p,
+    .tarif-notes ul li {
+        font-size: 0.9rem;
+    }
+
+    /* --- CONTACT --- */
+    .contact-section {
+        padding: 40px 20px 60px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .contact-subtitle {
+        font-size: 0.88rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        gap: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row .form-group {
+        flex: 1;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 12px 2px 8px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .textarea-group textarea {
+        min-height: 100px;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-services {
+        padding: 40px 20px;
+        gap: 18px;
+    }
+
+    .contact-services p {
+        font-size: 1.6rem;
+    }
+
+    /* --- MENTIONS LÉGALES --- */
+    .legal-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+        margin: 0 auto 60px;
+    }
+
+    .legal-card {
+        padding: 25px 20px;
+        gap: 15px;
+    }
+
+    .legal-card--full {
+        grid-column: 1;
+    }
+
+    .legal-card--centered {
+        grid-column: 1;
+        max-width: 100%;
+    }
+
+    .legal-card-title {
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+
+    .legal-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .legal-row dt {
+        font-size: 0.75rem;
+    }
+
+    .legal-row dd {
+        font-size: 0.9rem;
+    }
+
+    .legal-text {
+        font-size: 0.9rem;
+    }
+
+    /* --- AVIS CLIENTS --- */
+    .avis-section {
+        padding: 0 20px;
+        margin: 0 auto 40px;
+    }
+
+    .avis-grid {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avis-card {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 auto;
+        padding: 25px 20px;
+    }
+
+    .avis-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .avis-card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .avis-rating {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .avis-author {
+        font-size: 0.85rem;
+    }
+
+    /* --- FORMULAIRE AVIS --- */
+    #avis-form {
+        padding: 0 20px;
+    }
+
+    .avis-group {
+        width: 100%;
+    }
+
+    .star-input {
+        font-size: 1.8rem;
+    }
+
+    .star-container {
+        justify-content: center;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.9rem;
+    }
+
+    .footer-payments-logos {
+        gap: 12px;
+    }
+
+    .payment-logo {
+        height: 40px;
+    }
+
+    .footer-bottom {
+        padding: 15px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+
+    /* --- HEADER / NAVIGATION --- */
+    .header-logo a {
+        font-size: 1.6rem;
+    }
+
+    .side-nav {
+        width: 240px;
+        padding: 70px 24px 30px;
+    }
+
+    .side-nav ul {
+        gap: 20px;
+    }
+
+    .side-nav ul li a {
+        font-size: 1rem;
+    }
+}
+}
